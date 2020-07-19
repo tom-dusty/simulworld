@@ -26,3 +26,7 @@ void Water::doStuff() {
 void Water::DefaultAction() {
     // Water doesn't do anything.. TODO: implement flow
 }
+
+bool Water::BlocksMovement() {
+    return true;
+}

@@ -47,3 +47,7 @@ double Food::consumeNutrition(double need){
 void Food::DefaultAction() {
     // Food loses nutrition over time TODO: later - for now nutrition lasts forever
 }
+
+bool Food::BlocksMovement() {
+    return false;
+}

@@ -72,3 +72,8 @@ void Living::doStuff() {
 
     // Otherwise do default action.
 }
+
+bool Living::BlocksMovement() {
+    // In general you can move past living things.
+    return false;
+}

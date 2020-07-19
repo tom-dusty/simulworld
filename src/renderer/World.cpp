@@ -72,8 +72,8 @@ std::shared_ptr<Entity> World::searchForNearestEntityType(const std::string &Nam
 
 bool World::isOccupiedBySolid(Coordinate coord)
 {
-    for(auto && entity: v_activeEntities){
-        if(entity->coord == coord)
+    for(auto && entity: v_activeEntities) {
+        if(entity->coord == coord && entity->BlocksMovement())
             return true;
     }
     return false;

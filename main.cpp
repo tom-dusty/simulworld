@@ -48,13 +48,13 @@ int main() {
         world->addEntity(food);
     }
 
-    //world->addEntity(sam);
+    world->addEntity(sam);
 
     world->addEntity(john);
     world->addEntity(sam1);
     world->addEntity(john1);
-    //world->addEntity(sam2);
-    //world->addEntity(john2);
+    world->addEntity(sam2);
+    world->addEntity(john2);
     char input = ' ';
     while(input != 'q'){
         world->render();

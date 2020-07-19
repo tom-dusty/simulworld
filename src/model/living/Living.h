@@ -26,6 +26,8 @@ public:
     Living(std::shared_ptr<World> world_in, double movementRate_in, double sensoryRadius_in);
 
     void doStuff();
+
+    bool BlocksMovement() override;
 };
 
 

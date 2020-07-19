@@ -31,6 +31,8 @@ public:
     // The character representation of this object
     virtual const char Symbol() = 0;
 
+    virtual bool BlocksMovement() = 0;
+
     // Do stuff
     virtual void doStuff() = 0;
 

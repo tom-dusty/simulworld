@@ -37,6 +37,8 @@ public:
     void DefaultAction() override;
 
     double consumeNutrition(double need);
+
+    bool BlocksMovement() override;
 };
 
 

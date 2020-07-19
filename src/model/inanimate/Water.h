@@ -24,6 +24,8 @@ public:
     void doStuff() override;
 
     void DefaultAction() override ;
+
+    bool BlocksMovement() override;
 };
 
 
