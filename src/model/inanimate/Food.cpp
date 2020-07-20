@@ -46,8 +46,17 @@ double Food::consumeNutrition(double need){
 
 void Food::DefaultAction() {
     // Food loses nutrition over time TODO: later - for now nutrition lasts forever
+    // growing food will, for now, increase nutrition over time
+    nutritionValueRemaining += 0;
 }
 
 bool Food::BlocksMovement() {
     return false;
+}
+
+OutputColour::Colour Food::Colour(){
+    if(nutritionValueRemaining > nutritionValue / 2.0)
+        return OutputColour::Colour::GREEN;
+    else
+        return OutputColour::Colour::YELLOW;
 }

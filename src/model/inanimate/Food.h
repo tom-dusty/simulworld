@@ -39,6 +39,8 @@ public:
     double consumeNutrition(double need);
 
     bool BlocksMovement() override;
+
+    OutputColour::Colour Colour();
 };
 
 

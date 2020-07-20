@@ -8,6 +8,7 @@
 #include <vector>
 
 #include "../util/Coordinate.h"
+#include "../util/OutputColour.h"
 #include "attributes/Attribute.h"
 
 class Attribute;
@@ -30,6 +31,9 @@ public:
 
     // The character representation of this object
     virtual const char Symbol() = 0;
+
+    // The colour of this object
+    virtual OutputColour::Colour Colour();
 
     virtual bool BlocksMovement() = 0;
 

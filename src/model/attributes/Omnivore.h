@@ -21,5 +21,4 @@ public:
     const std::string &Name() override;
 };
 
-
 #endif //SIMUL_WORLD_OMNIVORE_H

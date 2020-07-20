@@ -4,6 +4,8 @@
 
 #include "World.h"
 
+#include "../util/OutputColour.h"
+
 World::World(unsigned u_size_in) {
     u_size = u_size_in;
 }
@@ -31,7 +33,7 @@ bool World::render() {
                 continue;
             }
             if(itr->get()->coord == Coordinate(x, y)){
-                std::cout << itr->get()->Symbol();
+                std::cout << OutputColour::ColourChar(itr->get()->Colour(), itr->get()->Symbol());
                 itr++;
                 if(itr != v_activeEntities.end() && itr->get()->coord == Coordinate(x, y)){
                     x--;

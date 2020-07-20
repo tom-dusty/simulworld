@@ -55,10 +55,12 @@ int main() {
     world->addEntity(john1);
     world->addEntity(sam2);
     world->addEntity(john2);
-    char input = ' ';
-    while(input != 'q'){
+    world->render();
+    int input = 1;
+    while(input != 0){
+        for(int i = 0; i < input; i++)
+            world->step();
         world->render();
-        world->step();
         std::cin >> input;
     }
     return 0;

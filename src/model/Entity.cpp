@@ -15,3 +15,8 @@ bool Entity::operator<(const Entity &right) {
 std::vector<std::shared_ptr<Attribute>> & Entity::getAttributes(){
     return v_attributes;
 }
+
+OutputColour::Colour Entity::Colour(){
+    // return the default colour (white)
+    return OutputColour::Colour::WHITE;
+}
